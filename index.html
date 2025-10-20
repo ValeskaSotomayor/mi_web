@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="icon" type = "image/png" href = "favicon.png">
     <title>Mi Página Web</title>
     <style>
         * {
@@ -18,7 +17,7 @@
         
         /* Encabezado */
         #header {
-            background-color: #333;
+            background-color: #642261;
             color: white;
             padding: 2rem;
             text-align: center;
@@ -26,7 +25,7 @@
         
         /* Menú de navegación */
         nav {
-            background-color: #555;
+            background-color: #97557e;
             padding: 1rem;
             position: sticky;
             top: 0;
@@ -47,7 +46,7 @@
         }
         
         nav a:hover {
-            background-color: #777;
+            background-color: #f4f4f4;
             border-radius: 5px;
         }
         
@@ -68,7 +67,7 @@
             font-size: 2rem;
         }
         
-        /* Sección Sobre Mí */
+        /* Sección Inicio */
         .about-content {
             display: flex;
             gap: 2rem;
@@ -102,7 +101,7 @@
         
         /* Pie de página */
         footer {
-            background-color: #333;
+            background-color: #642261;
             color: white;
             text-align: center;
             padding: 2rem;
@@ -110,7 +109,7 @@
         }
         
         footer a {
-            color: #4CAF50;
+            color: #978fff;
             text-decoration: none;
         }
         
@@ -130,7 +129,6 @@
     <nav>
         <ul>
             <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre-mi">Sobre Mí</a></li>
             <li><a href="#ubicacion">Ubicación</a></li>
             <li><a href="#video">Video</a></li>
             <li><a href="#contacto">Contacto</a></li>
@@ -138,20 +136,18 @@
     </nav>
 
     <!-- SECCIÓN 1: SOBRE MÍ (con texto e imagen) -->
-    <section id="sobre-mi" class="section">
-        <h2>Sobre Mí</h2>
+    <section id="inicio" class="section">
+        <h2>Inicio</h2>
         <div class="about-content">
-            <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=400&h=300&fit=crop" 
-                 alt="Imagen de naturaleza con perro"
-                 title="Mi foto favorita">
+            <img src="HTML5_logo.png" alt="HTML" width="300">
+
             <div class="about-text">
-                <p>¡Hola! Soy un estudiante aprendiendo desarrollo web. Me apasiona la tecnología y crear sitios web interesantes.</p>
+                <p>Bienvenid@ a mi página! Sigue navegando y así seguirás aprendiendo!</p>
                 <p>En esta página encontrarás información sobre mis proyectos, mi ubicación y algunos recursos útiles.</p>
                 <p>Si quieres saber más sobre HTML, puedes visitar 
-                   <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
-                       MDN Web Docs
+                   <a href="https://www.w3schools.com/" target="_blank">
+                       w3schools.
                    </a> 
-                   (se abre en una nueva pestaña).
                 </p>
             </div>
         </div>
@@ -161,24 +157,17 @@
     <section id="ubicacion" class="section">
         <h2>Mi Ubicación</h2>
         <p>Aquí puedes ver dónde me encuentro en el mapa:</p>
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.8282514438586!2d-0.18611842346703856!3d38.96716297166863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61f967f7c5e7b5%3A0x4db1c3e7f5f8e7b5!2sGandia%2C%20Valencia%2C%20Espa%C3%B1a!5e0!3m2!1ses!2ses!4v1234567890123!5m2!1ses!2ses"
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Mapa de Gandia, Valencia">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d197294.23575548557!2d-0.36151130000001713!3d39.40778525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf0efb06f%3A0xb4a351011f7f1d39!2sValencia!5e0!3m2!1ses!2ses!4v1760992754052!5m2!1ses!2ses" 
+             style="border:0;" allowfullscreen>
         </iframe>
     </section>
 
     <!-- SECCIÓN 3: VIDEO (con YouTube) -->
     <section id="video" class="section">
         <h2>Video Recomendado</h2>
-        <p>Aquí te dejo un video interesante sobre programación:</p>
-        <iframe 
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-            title="Video de YouTube" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
+        <p>Aquí te dejo un video interesante sobre como aprender html:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/MJkdaVFHrto?si=zC6Y_ovloTrX883J"
+            title="YouTube video" frameborder="0" allowfullscreen>
         </iframe>
     </section>
 
@@ -186,8 +175,9 @@
     <!-- PIE DE PÁGINA -->
     <footer id="contacto">
         <p>&copy; 2025 Mi Página Web. Todos los derechos reservados.</p>
-        <p>Contacto: <a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a></p>
+        <p>Contacto: <a href="mailto:contacto@ejemplo.com">Valeska@gmail.com</a></p>
         <p>Sígueme en <a href="https://github.com" target="_blank">GitHub</a></p>
     </footer>
+    hola
 </body>
 </html>
