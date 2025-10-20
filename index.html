@@ -1,1 +1,167 @@
-"Web" 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        
+        /* Encabezado */
+        #header {
+            background-color: #333;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        /* Menú de navegación */
+        nav {
+            background-color: #555;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #777;
+            border-radius: 5px;
+        }
+        
+        /* Secciones */
+        .section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section:nth-child(even) {
+            background-color: #f4f4f4;
+        }
+        
+        .section h2 {
+            color: #333;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+        
+        /* Sección Sobre Mí */
+        .about-content {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .about-content img {
+            max-width: 400px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        /* Iframes */
+        iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: block;
+            margin: 2rem auto;
+        }
+        
+        /* Pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- ENCABEZADO -->
+    <header id="header">
+        <h1>Mi Página Web Personal</h1>
+        <p>Bienvenido a mi sitio</p>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- SECCIÓN 1: SOBRE MÍ (con texto e imagen) -->
+    <section id="sobre-mi" class="section">
+        <h2>Sobre Mí</h2>
+        <div class="about-content">
+            <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=400&h=300&fit=crop" 
+                 alt="Imagen de naturaleza con perro"
+                 title="Mi foto favorita">
+            <div class="about-text">
+                <p>¡Hola! Soy un estudiante aprendiendo desarrollo web. Me apasiona la tecnología y crear sitios web interesantes.</p>
+                <p>En esta página encontrarás información sobre mis proyectos, mi ubicación y algunos recursos útiles.</p>
+                <p>Si quieres saber más sobre HTML, puedes visitar 
+                   <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
+                       MDN Web Docs
+                   </a> 
+                   (se abre en una nueva pestaña).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer id="contacto">
+        <p>&copy; 2025 Mi Página Web. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a></p>
+        <p>Sígueme en <a href="https://github.com" target="_blank">GitHub</a></p>
+    </footer>
+</body>
+</html>
